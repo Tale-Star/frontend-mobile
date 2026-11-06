@@ -1,0 +1,187 @@
+# ------------------------------------------------------------------------------
+# 1. Flutter, Dart & Herramientas de Compilación
+# ------------------------------------------------------------------------------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+.packages
+
+# Directorios de compilación (raíz y anidados)
+/build/
+build/
+/coverage/
+coverage/
+**/doc/api/
+
+# Símbolos, logs y mapas de ofuscación de Flutter
+app.*.symbols
+app.*.map.json
+flutter_*.log
+
+# Binarios de empaquetado generados
+*.apk
+*.aab
+*.ipa
+*.app
+*.xctest
+
+# NOTA OFICIAL SOBRE pubspec.lock:
+# Según la documentación oficial de Flutter y Dart, en aplicaciones móviles
+# (a diferencia de paquetes o librerías) el archivo pubspec.lock DEBE mantenerse
+# en control de versiones para garantizar builds reproducibles e idénticos en CI/CD.
+
+# ------------------------------------------------------------------------------
+# 2. Android (Cachés, Compilación y Claves de Firma)
+# ------------------------------------------------------------------------------
+**/android/.gradle/
+**/android/.kotlin/
+**/android/.cxx/
+**/android/captures/
+**/android/local.properties
+**/android/GeneratedPluginRegistrant.java
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/android/**/build/
+
+# Claves de firma y credenciales privadas (¡CRÍTICO: NUNCA subir a GitHub!)
+key.properties
+*.keystore
+*.jks
+*.p12
+*.pem
+
+# Gradle wrapper descargable
+**/android/gradle/wrapper/gradle-wrapper.jar
+
+# ------------------------------------------------------------------------------
+# 3. iOS & macOS (Archivos Efímeros y Pods)
+# ------------------------------------------------------------------------------
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/**/DerivedData/
+**/ios/**/xcuserdata/
+**/ios/**/.generated/
+**/macos/Flutter/ephemeral/
+**/macos/Pods/
+
+# Archivos de proyectos Xcode específicos del usuario
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+!default.mode1v3
+!default.mode2v3
+!default.pbxuser
+!default.perspectivev3
+
+# ------------------------------------------------------------------------------
+# 4. Web, Linux & Windows Desktop
+# ------------------------------------------------------------------------------
+**/linux/flutter/ephemeral/
+**/windows/flutter/ephemeral/
+**/web/flutter_bootstrap.js
+
+# Visual Studio (Windows Desktop)
+windows/*.suo
+windows/*.user
+windows/*.userosscache
+windows/*.sln.docstates
+windows/x64/
+windows/x86/
+windows/*.[Cc]ache
+!windows/*.[Cc]ache/
+
+# ------------------------------------------------------------------------------
+# 5. IDEs, Editores de Código y Entornos
+# ------------------------------------------------------------------------------
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+.shelf/
+out/
+
+# Visual Studio Code (configuraciones locales del desarrollador)
+.vscode/
+
+# Editores adicionales y respaldos automáticos
+.fleet/
+.atom/
+.history/
+*.swp
+*.swo
+*~
+*.bak
+.sublime-*
+
+# ------------------------------------------------------------------------------
+# 6. Variables de Entorno, Secretos y Archivos Privados
+# ------------------------------------------------------------------------------
+# Archivos de entorno locales y secretos personales
+*.env.local
+*.env.*.local
+*.local.env
+.env.secret
+*.secret
+
+# EXCEPCIÓN EXPLÍCITA: Mantener en el repositorio los ambientes declarados del proyecto
+!environments/.env.development
+!environments/.env.staging
+!environments/.env.production
+
+# ------------------------------------------------------------------------------
+# 7. Cachés y Artefactos Temporales de Tale Star
+# ------------------------------------------------------------------------------
+# Directorios temporales de caché multimedia generados por pruebas o en ejecución
+ts_media_cache_*
+ts_media_cache_*/
+
+# Archivos JAR residuales fuera de herramientas estándar
+classes.jar
+*.jar
+!**/android/gradle/wrapper/gradle-wrapper.jar
+
+# ------------------------------------------------------------------------------
+# 8. Sistema Operativo y Basura Temporal
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.fuse_hidden*
+.directory
+.Trash-*
+
+# Logs y volcados de errores de máquinas virtuales
+*.log
+*.pyc
+hs_err_pid*
+replay_pid*
+migrate_working_dir/

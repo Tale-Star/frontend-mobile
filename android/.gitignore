@@ -1,0 +1,33 @@
+# ==============================================================================
+# 🤖 Android Subsystem — Git Ignore Configuration (StarTale Mobile)
+# ==============================================================================
+
+# Gradle build cache & wrappers
+/.gradle/
+/captures/
+gradle-wrapper.jar
+/gradlew
+/gradlew.bat
+
+# SDK and local system configuration (¡CRÍTICO: Contiene rutas locales de SDK!)
+/local.properties
+
+# Generados por Flutter / Plugins
+GeneratedPluginRegistrant.java
+.cxx/
+build/
+app/build/
+
+# Kotlin compiler daemon cache
+.kotlin/
+
+# IDE / Android Studio
+.idea/
+*.iml
+
+# Claves de firma y credenciales privadas (¡NUNCA subir a GitHub!)
+key.properties
+**/*.keystore
+**/*.jks
+**/*.p12
+**/*.pem
